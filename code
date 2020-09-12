@@ -1,0 +1,31 @@
+class students:
+
+
+     # here calloag_name is a attribute and name of collage is to be entered
+    # instance attribute  is defined inside the constructor function of a class. For example, __init__(self,..).
+  def __init__(self, name ,age , DOB ,addmID ,gender):
+        
+        self.name = name
+        self.age = age
+        self.DOB = DOB
+        self.addmID = addmID
+        self.gender = gender
+
+  def print_name (self,name ,age ):
+        print("student name and age :  " , self.name ,self.age)
+  def print(self):
+      print("Name : " ,self.name)
+      print("Age:  ", self.age)
+      print("DOB : ",self.DOB)
+      print("AdmissionID : ",self.addmID)
+      print("Gender : ",self.gender)
+
+student_1=students("Raman", 21 , "12/02/2000" ,2121,"male")
+student_2=students("Simran", 22 , "13/03/2000" , 32223 ,"female")
+student_3=students("Raj", 21 , "12/08/2000" ,2344 ,"male ")
+student_4=students("Ram", 23 , "12/07/2000" ,6533 , "male")
+
+student_1.print()
+student_2.print()
+student_3.print()
+student_4.print()
